@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E7EE6E4-D195-44A3-B333-FB122FFDB117}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>coalgasOS</RootNamespace>
+    <AssemblyName>coalgasOS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataClass.cs" />
+    <Compile Include="Form0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form0.Designer.cs">
+      <DependentUpon>Form0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About\FormAbout2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\FormAbout2.Designer.cs">
+      <DependentUpon>FormAbout2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Del\FormDelClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Del\FormDelClient.Designer.cs">
+      <DependentUpon>FormDelClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Del\FormDelClientPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Del\FormDelClientPay.Designer.cs">
+      <DependentUpon>FormDelClientPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Del\FormDelCoalgas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Del\FormDelCoalgas.Designer.cs">
+      <DependentUpon>FormDelCoalgas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Del\FormDelStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Del\FormDelStaff.Designer.cs">
+      <DependentUpon>FormDelStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Del\FormDelSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Del\FormDelSupplier.Designer.cs">
+      <DependentUpon>FormDelSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Del\FormDelSupplierPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Del\FormDelSupplierPay.Designer.cs">
+      <DependentUpon>FormDelSupplierPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exe\FormExecTopClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exe\FormExecTopClient.Designer.cs">
+      <DependentUpon>FormExecTopClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exe\FormExecTopStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exe\FormExecTopStaff.Designer.cs">
+      <DependentUpon>FormExecTopStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSetUpdatePw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSetUpdatePw.Designer.cs">
+      <DependentUpon>FormSetUpdatePw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelClient.Designer.cs">
+      <DependentUpon>FormSelClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="coalgasDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>coalgasDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New\FormNewClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New\FormNewClient.Designer.cs">
+      <DependentUpon>FormNewClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New\FormNewCoalgas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New\FormNewCoalgas.Designer.cs">
+      <DependentUpon>FormNewCoalgas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New\FormNewInto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New\FormNewInto.Designer.cs">
+      <DependentUpon>FormNewInto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New\FormNewOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New\FormNewOut.Designer.cs">
+      <DependentUpon>FormNewOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New\FormNewStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New\FormNewStaff.Designer.cs">
+      <DependentUpon>FormNewStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New\FormNewSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New\FormNewSupplier.Designer.cs">
+      <DependentUpon>FormNewSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form0.resx">
+      <DependentUpon>Form0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About\FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About\FormAbout2.resx">
+      <DependentUpon>FormAbout2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Del\FormDelClient.resx">
+      <DependentUpon>FormDelClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Del\FormDelClientPay.resx">
+      <DependentUpon>FormDelClientPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Del\FormDelCoalgas.resx">
+      <DependentUpon>FormDelCoalgas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Del\FormDelStaff.resx">
+      <DependentUpon>FormDelStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Del\FormDelSupplier.resx">
+      <DependentUpon>FormDelSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Del\FormDelSupplierPay.resx">
+      <DependentUpon>FormDelSupplierPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exe\FormExecTopClient.resx">
+      <DependentUpon>FormExecTopClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exe\FormExecTopStaff.resx">
+      <DependentUpon>FormExecTopStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClass.resx">
+      <DependentUpon>FormClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSetUpdatePw.resx">
+      <DependentUpon>FormSetUpdatePw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelClient.resx">
+      <DependentUpon>FormSelClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New\FormNewClient.resx">
+      <DependentUpon>FormNewClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New\FormNewCoalgas.resx">
+      <DependentUpon>FormNewCoalgas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New\FormNewInto.resx">
+      <DependentUpon>FormNewInto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New\FormNewOut.resx">
+      <DependentUpon>FormNewOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New\FormNewStaff.resx">
+      <DependentUpon>FormNewStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New\FormNewSupplier.resx">
+      <DependentUpon>FormNewSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="coalgasDBDataSet.xsc">
+      <DependentUpon>coalgasDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="coalgasDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>coalgasDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="coalgasDBDataSet.xss">
+      <DependentUpon>coalgasDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
